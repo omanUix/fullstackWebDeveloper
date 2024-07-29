@@ -1,0 +1,14 @@
+/* ini adalah komen satu baris */
+h1 {
+    color: red;
+    font-size: 20px;
+}
+
+/* 
+ini adalah komentar
+multi baris
+*/
+h2 {
+    color: blue;
+    font-size: 24px;
+}

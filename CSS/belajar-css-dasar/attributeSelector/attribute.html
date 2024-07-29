@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribte Selector</title>
+    <style>
+        /* a[target= _blank]{
+            color: red;
+        } */
+        a{
+            display: block;
+            padding: 5px;
+        }
+
+        /* p[title~="belajar"]{
+            color: green;
+        } */
+
+        /* p[title|="belajar"]{
+            color: green;
+        } */
+/* 
+        p[title^="belajar"]{
+            color: green;
+        } */
+
+        /* p[title$="belajar"]{
+            color: green;
+        } */
+
+        p[title*="belajar"]{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#" target="_blank">Ini Dipilih</a>
+    <a href="#">Ini Tidak Dipilih</a>
+    <a href="#" target="_self">Ini Tidak Dipilih</a>
+    <a href="#">Ini Tidak Dipilih</a>
+
+    <p title="belajar pemrograman">Ini Dipilih</p>
+    <p title="pemrogramanbelajar">Ini Dipilih</p>
+    <p title="belajar">Ini Dipilih</p>
+    <p title="belajar-">Ini Dipilih</p>
+    <p title="belajar-pemrograman">Ini Dipilih</p>
+</body>
+</html>

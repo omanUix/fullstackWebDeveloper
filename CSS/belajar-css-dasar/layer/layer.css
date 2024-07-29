@@ -1,0 +1,25 @@
+@layer a {
+    section h1 {
+       border: 2px solid salmon;
+       width: 50%;
+       height: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: blue;
+       background-color: antiquewhite;
+    }
+ }
+
+ @layer b {
+    section h1 {
+       border: 2px solid salmon;
+       width: 50%;
+       height: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: blue;
+       background-color: greenyellow;
+    }
+ }

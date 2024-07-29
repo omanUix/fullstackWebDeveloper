@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Writing Mode</title>
+      <style>
+         table {
+            border: 2px solid;
+         }
+
+         .text1 td {
+            writing-mode: horizontal-tb;
+         }
+
+         .text2 td {
+            writing-mode: vertical-lr;
+         }
+
+         .text3 td {
+            writing-mode: vertical-rl;
+         }
+         .text4 td {
+            writing-mode: sideways-lr;
+         }
+
+         .text5 td {
+            writing-mode: sideways-rl;
+         }
+      </style>
+   </head>
+   <body>
+      <table>
+         <tr>
+            <th>Value</th>
+            <th>Vertical Script</th>
+            <th>Horizontal (LTR) Script</th>
+            <th>Horizontal (RTL) Script</th>
+            <th>Mixed Script</th>
+         </tr>
+         <tr class="text1">
+            <th>horizontal-tb</th>
+            <td>I don't have a computer at home</td>
+            <td>Example Text</td>
+            <td>No Problem</td>
+            <td>In 2004</td>
+         </tr>
+
+         <tr class="text2">
+            <th>vertical-lr</th>
+            <td>My house</td>
+            <td>Example Text</td>
+            <td>Example Long Text</td>
+            <td>In 1994</td>
+         </tr>
+         <tr class="text3">
+            <th>vertical-rl</th>
+            <td>My Home</td>
+            <td>Example text</td>
+            <td>Example long text</td>
+            <td>In 1994</td>
+         </tr>
+         <tr class="experimental text4">
+            <th>sideways-lr</th>
+            <td>我家没有电脑。</td>
+            <td>Example text</td>
+            <td>מלל ארוך לדוגמא</td>
+            <td>1994年に至っては</td>
+         </tr>
+         <tr class="experimental text5">
+            <th>sideways-rl</th>
+            <td>我家没有电脑。</td>
+            <td>Example text</td>
+            <td>מלל ארוך לדוגמא</td>
+            <td>1994年に至っては</td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input {
+            border-radius: 10px;
+            margin: 10px;
+            padding: 5px;
+        }
+        input:is(:-webkit-autofill, :autofill) {
+            border: 3px dotted orange;
+        }
+
+        input:hover {
+            background-color: greenyellow;
+        }
+
+        #email:focus, #password:focus {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <label for="email">Email :</label>
+        <input type="email" name="email" required id="email"  autocomplete="email">
+        <br>
+        <label for="password">Password :</label>
+        <input type="password" name="password" required ="password" autocomplete="current-password">
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
